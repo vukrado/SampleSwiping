@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EXd-tP-pRr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--May 2020-->
+        <scene sceneID="mxP-43-Stb">
+            <objects>
+                <viewController id="EXd-tP-pRr" customClass="ViewController" customModule="SwipingSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xyu-Mf-UaS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jwa-3A-PUg">
+                                <rect key="frame" x="0.0" y="132" width="414" height="681"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yxf-B6-vcs" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1362"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dVv-hv-noz">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1362"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="C3M-ib-jWB">
+                                                    <size key="itemSize" width="142" height="194"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rKg-UY-JfS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="142" height="194"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Kge-MN-GpT">
+                                                            <rect key="frame" x="0.0" y="0.0" width="142" height="194"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="142" height="194"/>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="dVv-hv-noz" secondAttribute="bottom" id="JhJ-pA-bfz"/>
+                                            <constraint firstItem="dVv-hv-noz" firstAttribute="leading" secondItem="Yxf-B6-vcs" secondAttribute="leading" id="TGY-fC-FVf"/>
+                                            <constraint firstItem="dVv-hv-noz" firstAttribute="top" secondItem="Yxf-B6-vcs" secondAttribute="top" id="Vfo-Bf-LrF"/>
+                                            <constraint firstAttribute="trailing" secondItem="dVv-hv-noz" secondAttribute="trailing" id="zhx-3p-0Op"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Yxf-B6-vcs" firstAttribute="centerX" secondItem="Jwa-3A-PUg" secondAttribute="centerX" id="0CL-dX-Fa3"/>
+                                    <constraint firstItem="Yxf-B6-vcs" firstAttribute="top" secondItem="Jwa-3A-PUg" secondAttribute="top" id="3va-Y9-gpz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yxf-B6-vcs" secondAttribute="trailing" id="LV0-td-rxD"/>
+                                    <constraint firstItem="Yxf-B6-vcs" firstAttribute="centerY" secondItem="Jwa-3A-PUg" secondAttribute="centerY" priority="250" id="cE8-7q-Djx"/>
+                                    <constraint firstItem="Yxf-B6-vcs" firstAttribute="height" secondItem="Jwa-3A-PUg" secondAttribute="height" multiplier="2" id="nQb-ds-ISK"/>
+                                    <constraint firstItem="Yxf-B6-vcs" firstAttribute="leading" secondItem="Jwa-3A-PUg" secondAttribute="leading" id="rPj-ll-RVB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yxf-B6-vcs" secondAttribute="bottom" priority="250" id="vnJ-SU-4xi"/>
+                                </constraints>
+                            </scrollView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WPo-ae-U3L">
+                                <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="AqN-jy-SIi"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="6Cb-Rc-AWZ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="p6S-T9-dXv">
+                                        <rect key="frame" x="0.0" y="-24" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qel-FH-EMC">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WPo-ae-U3L" firstAttribute="trailing" secondItem="g5u-eK-fhG" secondAttribute="trailing" id="01Y-Nk-JJ8"/>
+                            <constraint firstItem="WPo-ae-U3L" firstAttribute="leading" secondItem="g5u-eK-fhG" secondAttribute="leading" id="1kw-JZ-I2h"/>
+                            <constraint firstItem="WPo-ae-U3L" firstAttribute="top" secondItem="g5u-eK-fhG" secondAttribute="top" id="3Yb-Oi-NmT"/>
+                            <constraint firstItem="Jwa-3A-PUg" firstAttribute="top" secondItem="WPo-ae-U3L" secondAttribute="bottom" constant="8" id="4BL-rg-KJK"/>
+                            <constraint firstItem="Jwa-3A-PUg" firstAttribute="trailing" secondItem="g5u-eK-fhG" secondAttribute="trailing" id="Aql-Kp-NQr"/>
+                            <constraint firstItem="Jwa-3A-PUg" firstAttribute="bottom" secondItem="g5u-eK-fhG" secondAttribute="bottom" id="F3Z-4B-rkJ"/>
+                            <constraint firstItem="Jwa-3A-PUg" firstAttribute="leading" secondItem="g5u-eK-fhG" secondAttribute="leading" id="icV-xS-Vzy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g5u-eK-fhG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="May 2020" largeTitleDisplayMode="always" id="8k5-kI-Jg9">
+                        <barButtonItem key="rightBarButtonItem" image="slider.horizontal.3" catalog="system" id="png-xn-iun">
+                            <color key="tintColor" name="Pathifi-blue"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="detailCollectionView" destination="dVv-hv-noz" id="cXV-Hp-Phr"/>
+                        <outlet property="topCollectionView" destination="WPo-ae-U3L" id="jU8-63-FRG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOd-WD-ClR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728.98550724637687" y="209.59821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
+        <namedColor name="Pathifi-blue">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
