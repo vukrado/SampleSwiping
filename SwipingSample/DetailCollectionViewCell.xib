@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="y1T-8b-ita" secondAttribute="bottom" constant="8" id="KNI-1n-i1d"/>
                             <constraint firstItem="y1T-8b-ita" firstAttribute="centerX" secondItem="tIx-bx-9mK" secondAttribute="centerX" id="c1T-Fy-MUK"/>
